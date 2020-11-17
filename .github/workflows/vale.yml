@@ -12,6 +12,7 @@ jobs:
       uses: errata-ai/vale-action@v1.3.0
       with:
         files: __onlyModified
+        onlyAnnotateModifiedLines: true
       env:
         # Required
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
