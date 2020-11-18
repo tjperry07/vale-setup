@@ -1,7 +1,6 @@
 name: Check Markdown links
 
 on: [pull_request]
-name: Check links for modified files
 jobs:
   markdown-link-check:
     runs-on: ubuntu-latest
