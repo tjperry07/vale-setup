@@ -5,9 +5,9 @@ jobs:
     name: runner / markdownlint
     runs-on: ubuntu-latest
     steps:
-      - name: markdownlint-github-check
-        uses: ./
+      - uses: actions/checkout@v1
+      - name: markdownlint
+        uses: prologic/action-markdownlint@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-check
-          level: warning
+          reporter: github-pr-review # Change reporter. (Only `github-pr-check` is supported at the moment).
