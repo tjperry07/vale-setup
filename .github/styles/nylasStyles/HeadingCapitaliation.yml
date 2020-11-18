@@ -1,0 +1,6 @@
+extends: capitalization
+message: "'%s' should use Title Case."
+link: 'https://nylas-style-guide.vercel.app/docs/language_and_grammar/capitalization/#headings'
+level: error
+scope: heading
+match: $title

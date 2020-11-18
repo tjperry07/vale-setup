@@ -1,0 +1,7 @@
+extends: existence
+message: "Never put anything important in parentheses"
+link: 'https://nylas-style-guide.vercel.app/docs/formatting/parentheses/'
+nonword: true
+level: suggestion
+tokens:
+  - '\(.+\)'

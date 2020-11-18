@@ -1,0 +1,8 @@
+extends: existence
+message: "Avoid using quotes."
+link: 'https://nylas-style-guide.vercel.app/docs/formatting/emphasis/'
+level: warning
+nonword: true
+tokens:
+  - (?:')
+  - (?:")

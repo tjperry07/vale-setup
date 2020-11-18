@@ -1,0 +1,8 @@
+extends: existence
+message: "Avoid semicolons."
+link: 'https://nylas-style-guide.vercel.app/docs/language_and_grammar/punctuation/#semicolons'
+nonword: true
+scope: sentence
+level: suggestion
+tokens:
+  - ';'

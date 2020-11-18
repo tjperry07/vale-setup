@@ -1,6 +1,6 @@
 extends: existence
 message: "Don't use foo, bar or foobar as data. Use actual data. '%s'"
-link: https://github.com/rapid7/metasploit-framework/blob/master/documentation/framework/framework_style_guide.md#code
+link: 'https://nylas-style-guide.vercel.app/docs/formatting/code/'
 nonword: true
 level: error
 tokens:

@@ -15,11 +15,7 @@ jobs:
     - name: Vale
       uses: errata-ai/vale-action@v1.3.0
       with:
-<<<<<<< HEAD
-        files: __onlyModified
-=======
         files: '${{ steps.get_changed_files.outputs.all }}'
->>>>>>> 94e08bca899e2e3eaa786cfb7f890fa99ec1c67f
       env:
         # Required
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

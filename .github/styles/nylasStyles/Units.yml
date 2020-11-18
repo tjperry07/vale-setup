@@ -1,0 +1,8 @@
+extends: existence
+message: "Put a space between the number and the unit in '%s'."
+link: 'https://nylas-style-guide.vercel.app/docs/formatting/numerals/#measurements'
+nonword: true
+level: error
+tokens:
+  - \d+(?:B|kB|MB|GB|TB)
+  - \d+(?:ns|ms|s|min|h|d)

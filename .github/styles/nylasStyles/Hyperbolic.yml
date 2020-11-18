@@ -1,8 +1,8 @@
 extends: existence
 message: Try to write more concise sentances '%s'
-link: "https://github.com/rapid7/metasploit-framework/blob/master/documentation/framework/framework_style_guide.md#sentences"
+link: "https://nylas-style-guide.vercel.app/docs/writing-about-people/write-for-all/#plain-language"
 ignorecase: true
-level: warning
+level: suggestion
 tokens: 
   - simple
   - just

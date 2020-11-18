@@ -1,0 +1,7 @@
+extends: existence
+message: "Don't use plurals in parentheses such as in '%s'."
+link: 'https://nylas-style-guide.vercel.app/docs/language_and_grammar/plural_parens/'
+level: error
+nonword: true
+tokens:
+  - '\b\w+\(s\)'

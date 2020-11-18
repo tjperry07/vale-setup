@@ -1,0 +1,7 @@
+extends: existence
+message: "Use question marks and exclamation points sparingly '%s'."
+link: 'https://nylas-style-guide.vercel.app/docs/language_and_grammar/punctuation/'
+level: suggestion
+nonword: true
+tokens:
+  - (?:(\?+|\!+))

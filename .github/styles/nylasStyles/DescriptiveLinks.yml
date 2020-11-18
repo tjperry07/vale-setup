@@ -1,0 +1,17 @@
+extends: existence
+message: "Use descriptive text for links. '%s'"
+link: 'https://nylas-style-guide.vercel.app/docs/ux-copy/copy-guidelines/#links'
+ignorecase: true
+level: warning
+scope: link
+tokens:
+  - this
+  - link
+  - here
+  - this topic
+  - this document
+  - article
+  - topic
+  - see here
+  - learn more here
+  - learn more

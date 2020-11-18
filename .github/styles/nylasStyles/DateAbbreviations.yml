@@ -1,0 +1,7 @@
+extends: existence
+message: "Avoid abbreviations of months unless necessary to save space ('%s')."
+link: 'https://nylas-style-guide.vercel.app/docs/formatting/numerals/#date-and-time'
+nonword: false
+level: suggestion
+tokens:
+  - (jan|feb|mar|apr|jul|aug|sept|oct|nov|dec)
