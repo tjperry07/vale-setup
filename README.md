@@ -13,3 +13,8 @@ However,
 
 # Broken Links and Markdown Validator
 [I am a broken link](https://somelink.com)
+
+# Another wrong header
+
+*list
+Hi I am after a list.
