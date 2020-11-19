@@ -2,7 +2,7 @@ extends: existence
 message: Try to write more concise sentances '%s'
 link: "https://nylas-style-guide.vercel.app/docs/writing-about-people/write-for-all/#plain-language"
 ignorecase: true
-level: warning
+level: error
 tokens: 
   - simple
   - just
