@@ -10,4 +10,5 @@ jobs:
         use-verbose-mode: 'yes'
         base-branch: 'main'
         config-file: 'mlc_config.json'
+        folder-path: .
       
