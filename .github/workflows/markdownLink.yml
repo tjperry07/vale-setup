@@ -5,6 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - name: List Commit Files
+      id: list_commit_files
+      run: |
+        echo "Mardown Check will run on the following files:"
+        cat ${HOME}/files.json
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
         use-quiet-mode: 'yes'
