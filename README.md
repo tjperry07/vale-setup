@@ -10,6 +10,6 @@ There are 4 workflows in this repo.
 
 ## Vale Errors
 However,
-
+therefore
 # Broken Links and Markdown Validator
 [I am a broken link](https://somelink.com)
