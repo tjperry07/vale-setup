@@ -5,16 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: jitterbit/get-changed-files@v1
-      with:
-        # Format of the steps output context.
-        # Can be 'space-delimited', 'csv', or 'json'.
-        # Default: 'space-delimited'
-        format: 'json'
-    - run: |
-        for changed_file in ${{ steps.files.outputs.all }}; do
-          echo "Do something with this ${changed_file}."
-        done
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
         use-quiet-mode: 'yes'
