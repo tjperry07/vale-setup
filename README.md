@@ -11,5 +11,7 @@ There are 4 workflows in this repo.
 ## Vale Errors
 However,
 
+simple
+
 # Broken Links and Markdown Validator
 [I am a broken link](https://somelink.com)
