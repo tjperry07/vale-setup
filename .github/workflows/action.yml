@@ -16,10 +16,12 @@ jobs:
        uses: errata-ai/vale-action@v1.3.0
        with: 
          files: '${{ steps.get_changed_files.outputs.all }}'
-         github_token: ${{ secrets.GITHUB_TOKEN }}
+       env: 
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
      - name: reviewdog
        uses: reviewdog/action-setup@v1
        with: 
          reviewdog_version: latest
+         reporter: github-pr-review
        env:
          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
