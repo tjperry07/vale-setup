@@ -7,14 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: reviewdog/action-template@v1
-        with:
-          github_token: ${{ secrets.github_token }}
-          # Change reviewdog reporter if you need [github-pr-check,github-check,github-pr-review].
-          reporter: github-pr-review
-          # Change reporter level if you need.
-          # GitHub Status Check won't become failure with warning.
-          level: warning
       - name: Get Changed Files
         id: get_changed_files
         uses: lots0logs/gh-action-get-changed-files@2.1.4
@@ -27,7 +19,14 @@ jobs:
         env:
           # Required
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          
+      - uses: reviewdog/action-template@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          # Change reviewdog reporter if you need [github-pr-check,github-check,github-pr-review].
+          reporter: github-pr-review
+          # Change reporter level if you need.
+          # GitHub Status Check won't become failure with warning.
+          level: warning          
 # name: Linting
 # on: [push]
 
